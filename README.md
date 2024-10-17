@@ -44,21 +44,21 @@ Each method has its advantages and disadvantages:
   Differences Between Inline, Internal, and External CSS:
   Inline CSS:
   
-    Definition: Applied directly to individual HTML elements using the style attribute.
-    Advantages: Quick and useful for small, specific changes.
-    Disadvantages: Hard to maintain, not reusable, violates best practices of separating content and style.
+  Definition: Applied directly to individual HTML elements using the style attribute.
+  Advantages: Quick and useful for small, specific changes.
+  Disadvantages: Hard to maintain, not reusable, violates best practices of separating content and style.
     
   Internal CSS:
   
-    Definition: CSS is placed within a <style> tag in the <head> of the HTML document.
-    Advantages: Suitable for styling unique to one page.
-    Disadvantages: Duplication occurs across multiple pages, not ideal for large projects.
+  Definition: CSS is placed within a <style> tag in the <head> of the HTML document.
+  Advantages: Suitable for styling unique to one page.
+  Disadvantages: Duplication occurs across multiple pages, not ideal for large projects.
     
   External CSS:
   
-    Definition: CSS is written in a separate .css file and linked via the HTML <link> tag.
-    Advantages: Best for large projects, reusable across multiple pages, improves maintainability and performance through caching.
-    Disadvantages: Requires an additional file request, styles won’t apply if the file fails to load.
+  Definition: CSS is written in a separate .css file and linked via the HTML <link> tag.
+  Advantages: Best for large projects, reusable across multiple pages, improves maintainability and performance through caching.
+  Disadvantages: Requires an additional file request, styles won’t apply if the file fails to load.
 
 ### Conclusion:
 
