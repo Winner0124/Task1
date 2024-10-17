@@ -1,0 +1,13 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 36px;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+}

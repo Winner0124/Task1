@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Demonstration</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="gpt2.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      h1 {
+        color: green;
+        text-align: center;
+      }
+
+      .internal-style {
+        background-color: lightgray;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline CSS -->
+    <h1 style="color: purple">This is an Inline CSS Example</h1>
+
+    <p style="font-size: 20px; color: red">
+      This paragraph is styled using inline CSS.
+    </p>
+
+    <!-- Internal CSS applied -->
+    <div class="internal-style">
+      <p>This paragraph is styled using internal CSS.</p>
+    </div>
+
+    <!-- External CSS applied -->
+    <div class="external-style">
+      <p>This paragraph is styled using external CSS.</p>
+    </div>
+  </body>
+</html>
