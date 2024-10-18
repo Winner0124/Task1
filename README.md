@@ -313,7 +313,7 @@ By using these techniques, you can efficiently identify and resolve CSS problems
 
 This repository demonstrates how to apply styles directly to HTML elements using the `style` attribute, known as inline styling. 
 
-## Example HTML Document
+ Example HTML Document
 
  following example shows how inline styles can be applied to various HTML elements:
 
@@ -356,7 +356,7 @@ This repository provides an overview of inline styles in HTML, including their p
 
 This repository contains an example of using both inline and external CSS styles in an HTML document. It demonstrates how these styles interact and the importance of understanding specificity and maintainability in CSS.
 
-## HTML (index.html)
+ HTML (index.html)
 
 ```html
 <!DOCTYPE html>
