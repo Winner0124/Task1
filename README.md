@@ -94,16 +94,20 @@ CSS selectors are patterns used to select and style elements in an HTML document
      - `p:hover { color: orange; }` (changes color of `<p>` elements when hovered).
 
   #### Example HTML Document
-        ```html
-      <!DOCTYPE html>
-    <html>
-    <head>
-      <title>CSS Selectors Example</title>
-      <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-      </body>
-    </html>
+    ```html
+    <header>
+        <h1 class="main-title">Welcome to My Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link active">About</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <h2>About Us</h2>
+        <p>This is an example paragraph.</p>
+    </section>
     
   #### Example CSS Rules
   
