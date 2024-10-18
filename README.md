@@ -75,7 +75,7 @@ Each method has its advantages and disadvantages:
 CSS selectors are patterns used to select and style elements in an HTML document. Here’s a brief overview of different types of selectors, along with a simple example.
 Types of CSS Selectors
 Element Selector: Targets all elements of a specific type.
--Example: h1 { color: blue; } (styles all <h1> elements).
+-Example: h1 { color: blue; }(styles all <h1> elements).
 Class Selector: Targets elements with a specific class.
 -Example: .nav-link { text-decoration: none; } (styles all elements with class nav-link).
 ID Selector: Targets a unique element with a specific ID.
