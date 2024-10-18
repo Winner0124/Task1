@@ -1129,7 +1129,7 @@ By understanding these additional properties and techniques, you can create more
 ### Conclusion
 Mastering the CSS box model allows for precise control over layout and spacing in web design, enabling the creation of visually appealing and well-structured pages. Understanding how to manipulate content, padding, border, and margin is key to effective web development.
 
-### Task 11:
+## Task 11:
 
 ### GPT:
 
@@ -1251,9 +1251,230 @@ Here’s an example HTML document that demonstrates the use of both tables and `
 - **Maintainability**: Using `<div>` elements for layout can make your code easier to understand and maintain.
 - **Flexibility**: `<div>` elements offer more flexibility in terms of styling and layout options.
 
-### Conclusion
+### Conclusion:
 
 Tables are best for data representation, while `<div>` elements offer flexibility for layout design. Knowing when to use each helps in building effective, organized, and accessible web pages.
+
+## Task 12:
+
+### GPT:
+ Flexbox Layout Model
+
+The Flexbox layout model is a CSS module that simplifies the process of creating responsive web designs by allowing for flexible arrangement of elements within a container.
+
+ Key Features
+
+- **Direction Control**: Use the `flex-direction` property to set the direction of flex items (either in rows or columns).
+  
+- **Alignment**:
+  - `justify-content`: Aligns items along the main axis (horizontal).
+  - `align-items`: Aligns items along the cross axis (vertical).
+
+- **Flexibility**: The `flex` property enables items to grow or shrink based on available space, making layouts adaptable.
+
+ Benefits for Responsive Design
+
+- **Automatic Space Distribution**: Flexbox handles spacing between items and adjusts their sizes automatically.
+
+- **Easy Alignment**: It provides straightforward methods for aligning items both vertically and horizontally.
+
+- **Responsive Behavior**: Flexbox makes it easy to create layouts that adapt to different screen sizes without complex calculations or hacks.
+
+ Example Responsive Layout Using Flexbox
+
+Here’s a simple example of a responsive layout using Flexbox:
+
+ HTML Structure
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Flexbox Layout</h1>
+    </header>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+    </div>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+</body>
+</html>
+```
+CSS:
+```css
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+.item {
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(25% - 40px); /* Flex-grow, flex-shrink, flex-basis */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #4CAF50;
+    color: white;
+}
+
+```
+Flexbox Layout Model
+
+ Explanation of Flexbox Properties Used
+
+- **`display: flex;`**: Turns the container into a flex container, allowing its children to be flex items.
+- **`flex-wrap: wrap;`**: Allows items to wrap onto new lines if there isn’t enough space in one line.
+- **`justify-content: space-around;`**: Distributes space evenly between items along the main axis.
+- **`align-items: center;`**: Vertically centers items within the flex container.
+- **`flex: 1 1 200px;`**: Each item can grow (`1`) and shrink (`1`) while having a base size of `200px`.
+
+### Gemini:
+ Flexbox Summary
+
+Flexbox is a CSS layout model for creating flexible and responsive layouts. It uses containers and items to arrange elements.
+
+ Key Properties
+
+ Flex Container Properties
+- **`display: flex;`**: Defines the container as a flex container.
+- **`flex-direction`**: Specifies the direction in which flex items are placed in the flex container (row or column).
+- **`justify-content`**: Aligns flex items along the main axis (horizontal).
+- **`align-items`**: Aligns flex items along the cross axis (vertical).
+- **`flex-wrap`**: Allows flex items to wrap onto multiple lines.
+
+ Flex Item Properties
+- **`flex`**: A shorthand for defining `flex-grow`, `flex-shrink`, and `flex-basis`.
+- **`flex-grow`**: Defines the ability for a flex item to grow if necessary.
+- **`flex-shrink`**: Defines the ability for a flex item to shrink if necessary.
+- **`flex-basis`**: Defines the default size of a flex item before the remaining space is distributed.
+
+Example
+
+HTML
+```html
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+</div>
+```
+CSS
+```css
+.container {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
+```
+Adjustments
+
+- **Change `flex-direction`**: Control the direction of items (either row or column).
+- **Change `justify-content`**: Align items horizontally along the main axis.
+- **Change `align-items`**: Align items vertically along the cross axis.
+- **Use `flex-wrap`**: Wrap items to a new line when there isn’t enough space.
+
+Benefits
+
+- **Responsive Layouts**: Flexbox easily adapts to different screen sizes.
+- **Flexibility**: Allows for arranging items in various ways.
+- **Efficiency**: Simplifies the process of layout creation.
+
+### Conclusion
+
+The Flexbox layout model significantly simplifies responsive design, allowing for flexible, easy-to-align layouts that adjust to various screen sizes. By leveraging properties like `justify-content`, `align-items`, and `flex-direction`, developers can create intuitive and adaptable interfaces with minimal effort.
+
+## Task 13:
+
+### GPT:
+
+CSS variables, or custom properties, allow developers to define reusable values in a stylesheet, promoting consistency and maintainability.
+
+ Key Features
+
+- **Definition**: CSS variables are defined using a syntax that starts with two hyphens (e.g., `--primary-color: #3498db;`).
+- **Scope**: They can be scoped globally (e.g., on the `:root`) or locally (within specific selectors).
+- **Usage**: Accessed with the `var()` function (e.g., `color: var(--primary-color);`).
+- **Dynamic Changes**: Their values can be changed in different contexts, such as media queries or via JavaScript, allowing for responsive adjustments.
+
+ Example Usage
+
+In the provided example:
+
+- **HTML Structure**: Includes a header, main content section with a card, and a footer.
+- **CSS Styles**: Defines several CSS variables for colors and applies them throughout the styles for the body, header, card, and button.
+
+ Changing Variable Values
+
+An additional class, `.dark-theme`, demonstrates how to change the primary and secondary colors to create an alternate theme. When applied to the body, all styles referencing these variables update automatically.
+
+ Benefits
+
+- **Consistency**: Ensures uniformity across the stylesheet.
+- **Dynamic Updates**: Changes to variable values automatically reflect wherever they are used, simplifying theme management.
+
+### Gemini:
+
+ CSS Variables (Custom Properties)
+
+CSS variables (custom properties) are a way to define and reuse values in your stylesheet.
+
+ How They Work
+
+1. **Define**: Use a `--` prefix followed by a variable name.
+2. **Use**: Reference the variable with `var()`.
+
+ Example
+
+```css
+:root {
+  --primary-color: blue;
+}
+
+.button {
+  color: var(--primary-color);
+}
+```
+## Benefits of CSS Variables
+
+- **Consistency**: Maintain consistent styles across your project.
+- **Flexibility**: Easily change values in one place, and have those changes reflected throughout your stylesheet.
+- **Efficiency**: Avoid repetitive declarations, reducing code duplication.
+- **Maintainability**: Improve code readability and make it easier to manage styles over time.
+
+### Conclusion
+
+CSS variables are an effective way to manage styles in a flexible and organized manner, making it easier to create responsive designs and maintain a consistent look across a website.
+
 
 
 
