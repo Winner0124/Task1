@@ -275,7 +275,7 @@ If a button isn't centered, inspect it to check the margin settings. You might f
  Problem
 An image on a web page is not displaying correctly. It appears too large and overlaps other elements.
 
-### Debugging Steps
+Debugging Steps
 
 1. **Inspect the Image**: 
    Right-click on the image and select "Inspect."
@@ -293,7 +293,7 @@ An image on a web page is not displaying correctly. It appears too large and ove
 5. **Check the Computed Styles**: 
    Ensure that the final styles are correct after considering inheritance and specificity.
 
-### Solution
+ Solution
     
   ```css
         img {
@@ -352,7 +352,7 @@ This repository provides an overview of inline styles in HTML, including their p
 
 ### Gemini
 
-# Inline and External Styles Example
+Inline and External Styles Example
 
 This repository contains an example of using both inline and external CSS styles in an HTML document. It demonstrates how these styles interact and the importance of understanding specificity and maintainability in CSS.
 
