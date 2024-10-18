@@ -307,7 +307,7 @@ An image on a web page is not displaying correctly. It appears too large and ove
 
 By using these techniques, you can efficiently identify and resolve CSS problems, enhancing both your debugging skills and understanding of CSS behavior.
 
-# Task 5:
+## Task 5:
 ### GPT
  Inline Styles in HTML
 
