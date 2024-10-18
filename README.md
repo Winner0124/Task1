@@ -94,7 +94,7 @@ CSS selectors are patterns used to select and style elements in an HTML document
      - `p:hover { color: orange; }` (changes color of `<p>` elements when hovered).
 
   #### Example HTML Document
-  
+  ```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -125,15 +125,17 @@ CSS selectors are patterns used to select and style elements in an HTML document
         </footer>
     </body>
     </html>
+```
     
   #### Example CSS Rules
-  
+  ```css
     h1 { color: blue; }
     .main-title { font-size: 2em; }
     #content { background-color: #f0f0f0; }
     a[href="#"] { color: red; }
     .nav-link.active { font-weight: bold; }
     p:hover { color: orange; }
+```
 
 ### Gemini
 
@@ -148,7 +150,7 @@ CSS selectors are patterns used to select and style elements in an HTML document
   Pseudo-Class Selectors: Target elements based on their state or position (e.g., :hover, :active, :first-child).
 
 #### Example HTML:
-
+```html
     <!DOCTYPE html>
     <html>
     <head>
@@ -158,8 +160,9 @@ CSS selectors are patterns used to select and style elements in an HTML document
     <body>
       </body>
     </html>
+```
 #### CSS:
-
+```css
     /* CSS rules using various selectors */
     p { color: blue; }
     .paragraph { font-size: 18px; }
@@ -167,6 +170,7 @@ CSS selectors are patterns used to select and style elements in an HTML document
     a[href] { text-decoration: underline; }
     input:hover { background-color: lightgray; }
     li:first-child { font-style: italic; }
+```
     
 ### Conclusion:
 
@@ -302,6 +306,94 @@ An image on a web page is not displaying correctly. It appears too large and ove
 ### Conclusion
 
 By using these techniques, you can efficiently identify and resolve CSS problems, enhancing both your debugging skills and understanding of CSS behavior.
+
+# Task 5:
+### GPT
+ Inline Styles in HTML
+
+This repository demonstrates how to apply styles directly to HTML elements using the `style` attribute, known as inline styling. 
+
+## Example HTML Document
+
+ following example shows how inline styles can be applied to various HTML elements:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Styles Example</title>
+</head>
+<body>
+    <h1 style="color: blue; text-align: center;">Welcome to My Website</h1>
+    <p style="font-size: 16px; color: gray;">This is an example paragraph with inline styles.</p>
+    <div style="background-color: lightyellow; padding: 20px; border: 1px solid #ccc;">
+        <h2 style="color: green;">Section Title</h2>
+        <p style="font-style: italic;">This section uses different styles.</p>
+    </div>
+</body>
+</html>
+```
+ Inline Styles in HTML
+
+This repository provides an overview of inline styles in HTML, including their pros and cons, and best practices for web development.
+
+ Pros of Inline Styles
+- **Quick and Easy**: Simple to apply for one-off styles.
+- **High Specificity**: Overrides styles from external stylesheets.
+- **Immediate Effect**: Changes are instantly visible in the HTML.
+
+ Cons of Inline Styles
+- **Lack of Reusability**: Styles must be repeated for each element.
+- **Poor Maintainability**: Difficult to manage as the number of styles grows.
+- **Mixing Content and Presentation**: Violates the best practice of separating HTML and CSS.
+- **Performance Issues**: Can lead to larger HTML files due to repeated styles.
+
+### Gemini
+
+# Inline and External Styles Example
+
+This repository contains an example of using both inline and external CSS styles in an HTML document. It demonstrates how these styles interact and the importance of understanding specificity and maintainability in CSS.
+
+## HTML (index.html)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inline and External Styles</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 style="color: blue;">This is a blue heading</h1>
+  <p>This is a paragraph.</p>
+  <div id="myDiv" class="myClass">
+    This is a div with both inline and external styles.
+  </div>
+</body>
+</html>
+```
+Explanation:
+
+The h1 element has an inline style that sets its color to blue.
+The div element has both inline and external styles. The inline style sets its id to myDiv, while the external stylesheet sets its background color, font size, border, and padding.
+Key points:
+
+Specificity: Inline styles have the highest specificity, followed by internal styles and external stylesheets.
+Maintainability: External stylesheets are generally better for maintaining code readability and reusability.
+Performance: Inline styles can slightly improve performance, but this improvement is usually negligible.
+Best practices:
+
+Use external stylesheets for most styling needs.
+Reserve inline styles for specific cases where quick adjustments are necessary.
+Avoid excessive use of inline styles.
+Consider using a CSS preprocessor like Sass or Less.
+
+
+### Conclusion
+While inline styles can be useful for quick fixes, using external stylesheets is generally recommended for better maintainability, reusability, and adherence to best practices in web development.
+
 
 
 
